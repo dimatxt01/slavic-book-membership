@@ -1,18 +1,9 @@
-import {
-  Container,
-  Text,
-  Heading,
-  HStack,
-  VStack,
-  Image,
-  Box,
-  Flex,
-} from "@chakra-ui/react";
+import {Box, Container, Flex, Heading, HStack, Image, Text, VStack,} from "@chakra-ui/react";
 
 import ReviewCard from "./review-card";
 
 import EmblaCarousel from "./EmblaCarousel";
-import { EmblaOptionsType } from "embla-carousel";
+import {EmblaOptionsType} from "embla-carousel";
 
 const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true };
 
@@ -25,41 +16,22 @@ type Review = {
 
 const reviews: Review[] = [
   {
-    text: "This subscription box is a goldmine for our children! The books are beautifully illustrated, engaging, and culturally relevant. We're so grateful for this opportunity to expose our kids to the rich world of Russian literature.",
-    name: "Name Surname",
-    image: "/assets/person.png",
-    position: "Position, Company Name",
+    text: "Каждая коробка — это удивительное разнообразие книг! Мы получаем не только сказки, но и познавательные энциклопедии и приключенческие истории. Это настоящий кладезь!",
+    name: "Марина Петрова",
+    image: "/assets/testimonial1.png",
+    position: "Мама троих детей",
   },
   {
-    text: "With this subscription, we don't have to worry about finding the right books. They arrive at our doorstep, ready to be enjoyed. It's a hassle-free way to build a beautiful library of Russian children's books.",
-    name: "Name Surname",
-    image: "/assets/person.png",
-    position: "Position, Company Name",
+    text: "Щоразу ми з дитиною в захваті від непередбачуваності та тепла, з яким підбирають книги. Це не просто література — це ключ до фантазії і нових знань.",
+    name: "Ірина Коваль",
+    image: "/assets/testimonial2.png",
+    position: "Літературознавиця",
   },
   {
-    text: "The books we receive are always a delightful surprise. The curation team clearly understands our children's interests and reading levels. It's like having a personal book concierge!",
-    name: "Name Surname",
-    image: "/assets/person.png",
-    position: "Position, Company Name",
-  },
-  {
-    text: "This subscription box is the perfect gift for any child. It's a gift that keeps on giving, month after month. We highly recommend it to any family looking to enrich their child's life.",
-    name: "Name Surname",
-    image: "/assets/person.png",
-    position: "Position, Company Name",
-  },
-  {
-    text: "Our child has become an avid reader thanks to this subscription box. The high-quality books and engaging stories have sparked their imagination and fostered a love of learning.",
-    name: "Name Surname",
-    image: "/assets/person.png",
-    position: "Position, Company Name",
-  },
-
-  {
-    text: "This subscription box is a wonderful way to connect our children with their Russian heritage. The books not only entertain but also educate, teaching them about Russian culture, history, and language.",
-    name: "Name Surname",
-    image: "/assets/person.png",
-    position: "Position, Company Name",
+    text: "We’ve built a wonderful library for our children without any effort! My husband, who grew up in Russia, loves how these books bring his culture to life. The expertly curated selection arrives each month, filled with delightful surprises that inspire both fun and learning!",
+    name: "Sophia Grant",
+    image: "/assets/testimonial3.png",
+    position: "Graphic Designer and Book Lover",
   },
 ];
 
@@ -103,6 +75,7 @@ export default function SocialProof() {
             position={{ base: "absolute", md: "relative" }}
             left="0"
             top="-58px"
+            zIndex={0}
           />
           <Image
             src="/assets/pencil-blocks.webp"
@@ -115,13 +88,6 @@ export default function SocialProof() {
             left="100%"
           />
           <VStack gap={{ base: "20px", md: "24px" }}>
-            <Text
-              fontWeight={"700"}
-              lineHeight="150%"
-              fontSize={{ base: "14px", md: "16px" }}
-            >
-              Social Proof
-            </Text>
             <Heading
               as="h2"
               fontSize={{ base: "24px", md: "48px" }}
@@ -129,11 +95,12 @@ export default function SocialProof() {
               maxW="770px"
               textAlign="center"
               lineHeight={"120%"}
+              zIndex={1}
             >
-              Thousands of trusted reviews from people like you
+              Trusted reviews from Families like your
             </Heading>
             <Text fontSize={{ base: "14px", md: "18px" }} lineHeight="150%">
-              Over 5 million Russian Books shipped
+              Over 800 Russian Books shipped !
             </Text>
           </VStack>
         </HStack>

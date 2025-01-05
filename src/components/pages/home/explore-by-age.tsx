@@ -8,12 +8,12 @@ function AgeCard({
                      image,
                      tag,
                      title,
-                     description,
+                     // description,
                  }: {
     image: string;
     tag: string;
     title: string;
-    description: string;
+    // description: string;
 }) {
     return (
         <Box
@@ -38,15 +38,16 @@ function AgeCard({
                     {tag}
                 </Text>
                 <Heading
-                    as="h4"
-                    fontSize="32px"
-                    fontWeight="700"
+                    as="h5"
+                    fontSize="24px"
+                    fontWeight="600"
                     lineHeight={"130%"}
-                    mb="16px"
+                    mb="24px"
+                    font={'inherit'}
                 >
                     {title}
                 </Heading>
-                <Text lineHeight={"150%"}>{description}</Text>
+                {/*<Text lineHeight={"150%"}>{description}</Text>*/}
             </Box>
         </Box>
     );
@@ -74,13 +75,13 @@ export default function ExploreByAge() {
             maxW="1320px"
         >
             <VStack gap={{base: "12px", md: "24px"}}>
-                <Text
-                    fontSize={{base: "14px", md: "16px"}}
-                    fontWeight={"600"}
-                    lineHeight={"150%"}
-                >
-                    Category
-                </Text>
+                {/*<Text*/}
+                {/*    fontSize={{base: "14px", md: "16px"}}*/}
+                {/*    fontWeight={"600"}*/}
+                {/*    lineHeight={"150%"}*/}
+                {/*>*/}
+                {/*    Category*/}
+                {/*</Text>*/}
                 <Heading
                     as="h3"
                     fontWeight={"700"}
@@ -174,22 +175,22 @@ export default function ExploreByAge() {
                     gap={{base: "16px", md: "32px"}}
                 >
                     <AgeCard
-                        image="/assets/age-box-1.webp"
-                        tag="1-3 Months"
-                        title="Early Learning Essentials, Books for Tiny Tots"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        image="/assets/age-box-1.jpg"
+                        tag="Early Literacy Starter Kit for Little Learners"
+                        title="Encourage a love for reading early on with a personalized collection of age-appropriate, engaging board books."
+                        // description="Encourage a love for reading early on with a personalized collection of age-appropriate, engaging board books perfect for sensory exploration and bonding moments."
                     />
                     <AgeCard
-                        image="/assets/age-box-2.webp"
-                        tag="4-7 Months"
-                        title="Sensory Stimulation, Books for Curious Minds"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        image="/assets/age-box-2.jpg"
+                        tag="Discover and Explore: A Personalized Library"
+                        title="Fuel curiosity and imagination with a selection of books tailored to young explorers"
+                        // description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     />
                     <AgeCard
-                        image="/assets/age-box-3.webp"
-                        tag="8-12 Months"
-                        title="Building Blocks of Language, Books for Little Learners"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        image="/assets/age-box-3.jpg"
+                        tag="Growing Minds, Personalized Book Sets"
+                        title="Spark creativity and learning with customizable libraries that grow with your child"
+                        // description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     />
                 </Grid> :
                 <Grid
@@ -197,22 +198,22 @@ export default function ExploreByAge() {
                     gap={{base: "16px", md: "32px"}}
                 >
                     <AgeCard
-                        image="/assets/age-box-1.webp"
-                        tag="1-3 Months"
-                        title="Early Learning Essentials, Books for Tiny Tots"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        image="/assets/age-box-1.jpg"
+                        tag="Early Literacy Starter Kit for Little Learners"
+                        title="Encourage a love for reading early on with a personalized collection of age-appropriate, engaging board books."
+                        // description="Encourage a love for reading early on with a personalized collection of age-appropriate, engaging board books perfect for sensory exploration and bonding moments."
                     />
                     <AgeCard
-                        image="/assets/age-box-2.webp"
-                        tag="4-7 Months"
-                        title="Sensory Stimulation, Books for Curious Minds"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        image="/assets/age-box-2.jpg"
+                        tag="Discover and Explore: A Personalized Library"
+                        title="Fuel curiosity and imagination with a selection of books tailored to young explorers"
+                        // description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     />
                     <AgeCard
-                        image="/assets/age-box-3.webp"
-                        tag="8-12 Months"
-                        title="Building Blocks of Language, Books for Little Learners"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        image="/assets/age-box-3.jpg"
+                        tag="Growing Minds, Personalized Book Sets"
+                        title="Spark creativity and learning with customizable libraries that grow with your child"
+                        // description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     />
                 </Grid>)}
 

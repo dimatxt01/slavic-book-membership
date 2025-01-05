@@ -57,13 +57,13 @@ export default function HowItWorks() {
     >
       <Container display={"flex"} flexDir={"column"} gap="80px" maxW="1320px">
         <VStack gap="16px">
-          <Text
-            fontWeight={"700"}
-            lineHeight="150%"
-            fontSize={{ base: "14px", md: "16px" }}
-          >
-            Tagline
-          </Text>
+          {/*<Text*/}
+          {/*  fontWeight={"700"}*/}
+          {/*  lineHeight="150%"*/}
+          {/*  fontSize={{ base: "14px", md: "16px" }}*/}
+          {/*>*/}
+          {/*  Tagline*/}
+          {/*</Text>*/}
 
           <Flex
             justifyContent={"flex-start"}

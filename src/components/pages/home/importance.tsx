@@ -1,12 +1,4 @@
-import {
-  Box,
-  Container,
-  Grid,
-  Heading,
-  Text,
-  VStack,
-  Image,
-} from "@chakra-ui/react";
+import {Box, Container, Grid, Heading, Image, Text, VStack,} from "@chakra-ui/react";
 
 export default function Importance() {
   return (
@@ -70,15 +62,13 @@ export default function Importance() {
             Why It's Important?
           </Heading>
           <Text
-            fontSize={{ base: "14px", md: "18px" }}
-            fontWeight={"400"}
-            lineHeight={"150%"}
-            textAlign={"center"}
-            maxW="836px"
+              fontSize={{ base: "14px", md: "18px" }}
+              fontWeight={"400"}
+              lineHeight={"150%"}
+              textAlign={"center"}
+              maxW="836px"
           >
-            Invest now for the greatest impact on your child&apos;s future. 90%
-            Ninety percent of your child's physical brain growth occurs by age
-            5.
+            Invest in your child's brightest future — <b>90% of brain development</b> happens by age 5. Quality <b>reading materials</b> enhance <b>cognitive growth</b>, <b>language skills</b>, and <b>cultural awareness</b>.
           </Text>
         </VStack>
         <Grid
@@ -87,7 +77,7 @@ export default function Importance() {
           position="relative"
         >
           <Image
-            src="/assets/importance-1.webp"
+            src="/assets/importance-1.jpg"
             width="100%"
             height="100%"
             objectFit="cover"
@@ -126,7 +116,7 @@ export default function Importance() {
               alt="importance-3"
             />
             <Image
-              src="/assets/importance-4.webp"
+              src="/assets/importance-4.jpg"
               width="100%"
               height="100%"
               objectFit="cover"

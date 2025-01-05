@@ -1,5 +1,4 @@
 import {Box, Container, Flex, Grid, Heading, HStack, Image, Text, VStack,} from "@chakra-ui/react";
-import Car from "@/icons/car";
 import Book from "@/icons/book";
 import Collection from "@/icons/collection";
 import Phone from "@/icons/phone";
@@ -36,13 +35,13 @@ export default function InTheBox() {
         maxW="1320px"
       >
         <VStack gap={{ base: "12px" }}>
-          <Text
-            fontSize={{ base: "14px", md: "16px" }}
-            fontWeight={"600"}
-            lineHeight={"150%"}
-          >
-            Tagline
-          </Text>
+          {/*<Text*/}
+          {/*  fontSize={{ base: "14px", md: "16px" }}*/}
+          {/*  fontWeight={"600"}*/}
+          {/*  lineHeight={"150%"}*/}
+          {/*>*/}
+          {/*  Tagline*/}
+          {/*</Text>*/}
           <HStack justify={"flex-start"}>
             <Flex
               justifyContent={"flex-start"}
@@ -67,9 +66,7 @@ export default function InTheBox() {
                 lineHeight={"150%"}
                 textAlign={"center"}
               >
-                Our award-winning early learning program includes personalized
-                book selections, tailored to your child's age, interests, and
-                developmental needs. It includes:
+                Our personalized Slavic book collection offers age-appropriate, engaging titles that nurture curiosity, language development, and a love for learning. Each curated box includes:
               </Text>
             </Flex>
             <Image
@@ -104,7 +101,7 @@ export default function InTheBox() {
             alt="butterfly"
           />
           <Image
-            src={"/assets/kid.webp"}
+            src={"/assets/kid-1.jpg"}
             alt="kid"
             height={{ md: "auto", base: "305px" }}
             width={{ md: "auto", base: "100%" }}
@@ -117,18 +114,17 @@ export default function InTheBox() {
             justifyContent={"space-between"}
           >
             <VStack alignItems="flex-start" gap={{ base: "16px", md: "24px" }}>
+              {/*<Feature>*/}
+              {/*  <Car /> An original collection of 7-10 playthings*/}
+              {/*</Feature>*/}
               <Feature>
-                <Car /> An original collection of 7-10 playthings
+                <Book /> 2 to 3 Slavic-language Books you and they will enjoy reading
               </Feature>
               <Feature>
-                <Book /> 1-3 Books
+                <Collection /> A creative activity guide with fun, interactive ideas for family bonding
               </Feature>
               <Feature>
-                <Collection /> An approachable, research-backed Play Guide
-              </Feature>
-              <Feature>
-                <Phone /> Access to The Lovevery App with ways to play and
-                expert Q&A
+                <Phone /> Access to exclusive reading tips and expert advice to foster early literacy
               </Feature>
             </VStack>
             <VStack alignItems="flex-start" gap={{ base: "16px", md: "24px" }}>

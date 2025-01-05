@@ -61,13 +61,13 @@ export default function Hero() {
             objectFit={"contain"}
             alt="cloud"
           />
-          <Text
-            fontWeight={"700"}
-            lineHeight="150%"
-            fontSize={{ base: "14px", md: "16px" }}
-          >
-            Tagline
-          </Text>
+          {/*<Text*/}
+          {/*  fontWeight={"700"}*/}
+          {/*  lineHeight="150%"*/}
+          {/*  fontSize={{ base: "14px", md: "16px" }}*/}
+          {/*>*/}
+          {/*  Tagline*/}
+          {/*</Text>*/}
           <Heading
             as="h1"
             fontSize={{ base: "24px", md: "48px" }}
@@ -76,7 +76,7 @@ export default function Hero() {
             textAlign="center"
             lineHeight={"120%"}
           >
-            Get Award Winning Russian Books for kids Every Month!
+            Get Best Slavic Books for kids Every Month!
           </Heading>
           <Text
             as="h2"
@@ -147,10 +147,11 @@ export default function Hero() {
           alt="cloud"
         />
         <Image
-          src="/assets/hero-image.webp"
+          src="/assets/ff.webp"
           alt="hero-image"
-          w="100%"
-          height={{ base: "200px", md: "100%" }}
+          position="relative"
+          // w="100%"
+          // height={{ base: "200px", md: "100%" }}
         />
       </Box>
     </>
