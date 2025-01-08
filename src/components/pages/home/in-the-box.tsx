@@ -1,14 +1,24 @@
-import {Box, Container, Flex, Grid, Heading, HStack, Image, Text, VStack,} from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Grid,
+  Heading,
+  HStack,
+  Image,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import Book from "@/icons/book";
 import Collection from "@/icons/collection";
 import Phone from "@/icons/phone";
 import Truck from "@/icons/truck";
 import Return from "@/icons/return";
 import Cancel from "@/icons/cancel";
-import {FaArrowRight} from "react-icons/fa6";
-import {Button} from "@/components/ui/button";
+import { FaArrowRight } from "react-icons/fa6";
+import { Button } from "@/components/ui/button";
 
-import {useModalStore} from "@/store/modal";
+import { useModalStore } from "@/store/modal";
 
 function Feature({ children }: { children: React.ReactNode }) {
   return (
@@ -66,7 +76,9 @@ export default function InTheBox() {
                 lineHeight={"150%"}
                 textAlign={"center"}
               >
-                Our personalized Slavic book collection offers age-appropriate, engaging titles that nurture curiosity, language development, and a love for learning. Each curated box includes:
+                Our personalized Slavic book collection offers age-appropriate,
+                engaging titles that nurture curiosity, language development,
+                and a love for learning. Each curated box includes:
               </Text>
             </Flex>
             <Image
@@ -87,6 +99,8 @@ export default function InTheBox() {
           templateColumns={{ md: "repeat(2, 1fr)", base: "repeat(1, 1fr)" }}
           gap={{ md: "80px", base: "24px" }}
           position="relative"
+          justifyContent={"center"}
+          alignItems={"center"}
         >
           <Image
             src="/assets/butterfly.webp"
@@ -118,13 +132,16 @@ export default function InTheBox() {
               {/*  <Car /> An original collection of 7-10 playthings*/}
               {/*</Feature>*/}
               <Feature>
-                <Book /> 2 to 3 Slavic-language Books you and they will enjoy reading
+                <Book /> 2 to 3 Slavic-language Books you and they will enjoy
+                reading
               </Feature>
               <Feature>
-                <Collection /> A creative activity guide with fun, interactive ideas for family bonding
+                <Collection /> A creative activity guide with fun, interactive
+                ideas for family bonding
               </Feature>
               <Feature>
-                <Phone /> Access to exclusive reading tips and expert advice to foster early literacy
+                <Phone /> Access to exclusive reading tips and expert advice to
+                foster early literacy
               </Feature>
             </VStack>
             <VStack alignItems="flex-start" gap={{ base: "16px", md: "24px" }}>
@@ -151,7 +168,7 @@ export default function InTheBox() {
               width={{ base: "100%", md: "auto" }}
               onClick={() => {
                 setIsOpen(true);
-                setButtonId("In the box button")
+                setButtonId("In the box button");
               }}
             >
               Start Getting Books Now <FaArrowRight />

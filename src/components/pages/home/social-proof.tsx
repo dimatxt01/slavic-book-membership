@@ -1,9 +1,18 @@
-import {Box, Container, Flex, Heading, HStack, Image, Text, VStack,} from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  HStack,
+  Image,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 
 import ReviewCard from "./review-card";
 
 import EmblaCarousel from "./EmblaCarousel";
-import {EmblaOptionsType} from "embla-carousel";
+import { EmblaOptionsType } from "embla-carousel";
 
 const OPTIONS: EmblaOptionsType = { dragFree: false, loop: true };
 
@@ -105,12 +114,16 @@ export default function SocialProof() {
           </VStack>
         </HStack>
         {/* Desktop */}
-        <HStack
+        {/* <HStack
           alignItems={"flex-start"}
           justifyContent={"center"}
           gap="32px"
           w="100%"
-          display={{ base: "none", md: "flex" }}
+          display={{ base: "none", md: "grid" }}
+          gridColumn={{ base: "1", md: "3" }}
+          gridTemplateColumns={{ base: "1fr", md: "1fr 2fr" }}
+          gridRow={{ base: "1", md: "1" }}
+          flexDirection={"row"}
           flexWrap={"wrap"}
         >
           <Flex flexShrink={0} flexDir={"column"} gap="32px">
@@ -146,7 +159,27 @@ export default function SocialProof() {
               />
             ))}
           </Flex>
-        </HStack>
+        </HStack> */}
+
+        <Flex
+          display={{ base: "none", md: "flex" }}
+          w="100%"
+          height={"100%"}
+          gap="32px"
+          justifyContent="center"
+          alignItems={"center"}
+        >
+          {reviews.map((item, index) => (
+            <Box key={index} flex="1" maxW="33%" minH="100%">
+              <ReviewCard
+                name={item.name}
+                text={item.text}
+                image={item.image}
+                position={item.position}
+              />
+            </Box>
+          ))}
+        </Flex>
 
         {/* Mobile */}
         <Box display={{ base: "block", md: "none" }}>
